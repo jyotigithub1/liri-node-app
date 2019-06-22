@@ -12,7 +12,7 @@ In this assignment, you will make LIRI. LIRI is like iPhone's SIRI. However, whi
 
 3. To retrieve the data that will power this app, you'll need to send requests using the `axios` package to the Bands in Town, Spotify and OMDB APIs. You'll find these Node packages crucial for your assignment.
 
-   * [Node-Spotify-API](https://www.npmjs.com/package/node-spotify-api)
+   * [Node-Spotify-API](hihttps://www.npmjs.com/package/node-spotify-api)
 
    * [Axios](https://www.npmjs.com/package/axios)
 
