@@ -1,6 +1,6 @@
 // console.log('this is loaded');
 var Spotify = require('node-spotify-api');
-var Omdb=require('omdb');
+
 exports.spotify = {
   id: process.env.SPOTIFY_ID,
   secret: process.env.SPOTIFY_SECRET
@@ -8,5 +8,6 @@ exports.spotify = {
 
 var Omdb=require('omdb');
 exports.omdb={
-id:process.env.APIKEY
+  id:process.env.HOST,
+  key:process.env.APIKEY
 };
