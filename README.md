@@ -56,8 +56,13 @@ These are the packags included in the app.
     * [DotEnv]   (https://www.npmjs.com/package/dotenv)
      *[Chalk]     (https://www.npmjs.com/package/chalk)
    
-   
-    
+Code by Command
+------------------------------
+
+Step-by Step screenshots
+------------------------------
+
+
     
     
     
