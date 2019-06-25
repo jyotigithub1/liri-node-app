@@ -50,10 +50,9 @@ The LIRI Bot was designed to produce search results based on the following comma
     
 These are the packags included in the app.
     
-    [Node-Spotify-API](hihttps://www.npmjs.com/package/node-spotify-api)
+    [Node-Spotify-API](https://www.npmjs.com/package/node-spotify-api)
    * [Axios](https://www.npmjs.com/package/axios)
    * [Moment](https://www.npmjs.com/package/moment)
-
    * [DotEnv](https://www.npmjs.com/package/dotenv)
    *[Chalk](https://www.npmjs.com/package/chalk)
    
