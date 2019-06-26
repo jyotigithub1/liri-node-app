@@ -83,7 +83,7 @@ spotify-this-song
 do-what-it-says
 ---------------------
 ![ss5](https://user-images.githubusercontent.com/48188772/60153400-bd238680-97a9-11e9-8183-aa7b730304d3.png)
-![readscreen2](https://user-images.githubusercontent.com/48188772/60153459-e9d79e00-97a9-11e9-9a37-3a56d4dbb7bc.png)
+![readscreen2](https://user-images.githubusercontent.com/48188772/60153736-cd883100-97aa-11e9-8b30-0bc1de198554.png)
 
 
 
