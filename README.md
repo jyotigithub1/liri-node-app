@@ -9,21 +9,25 @@ Expected Outcomes
 -------------------------
 The LIRI Bot was designed to produce search results based on the following commands:
 
-    1. node liri.js concert-this
-    2. node liri.js spotify-this-song
-    3. node liri.js movie-this
-    4. node liri.js do-what-it-says
+    1. node liri.js
+     ? Who are u ? jyoti
+     ? Want to proceed Yes
+    ? Welcome  jyoti here are the options!! (Use arrow keys)
+        > Need Info on Movies
+          Need Info on Concert
+          Spotify the Song
+           Do what u Says
 
 --------------------------------------------------------------------
   Each command produced different search results as listed below:
-  1. node liri.js concert-this “artist/band name” 
+  1. Need Info on Concert 
 
     Name of venue
     Venue location
     Date of the event in MM/DD/YYYY format
 
 --------------------------------------------------------------------------------
-2.node liri.js spotify-this-song “song/track name” 
+2 spotify-the song  
 
     Artist
     Song
@@ -31,7 +35,7 @@ The LIRI Bot was designed to produce search results based on the following comma
     Albumn
 
 ----------------------------------------------------------------------------------
-3.node liri.js movie-this “movie title”
+3.Need Info on Movies
 
     Title of the movie
     Year the movie came out
@@ -44,9 +48,13 @@ The LIRI Bot was designed to produce search results based on the following comma
 
 --------------------------------------------------------------------------------
 
-4.node liri.js do-what-it-says
+4. do-what-it-says
 
-    Print the spotify results for “I want it that way” stored in the random.txt file
+    Print the the results that are stored in the random.txt file
+    like    
+         spotify-this-song
+         Need-Info-on-Movies
+         Need-Info-on-Concert
     
 #These are the packags included in the app.
     
