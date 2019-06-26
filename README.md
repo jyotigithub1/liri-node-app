@@ -95,7 +95,8 @@ Need-info-on-Concert
         );
     });
 }
-function banddisplay(response) {
+
+    function banddisplay(response) {
     var dateandtime = moment(response.data[0].datetime, "YYYY-MM-DD'T'HH:mm:ss").format("ddd, MMMM Do,HH:mm");
     log(chalk.red("--------------------------------------------------------------"));
     log(chalk.blue("Venue Name : " + chalk.white(JSON.stringify(response.data[0].venue.name))));
@@ -107,7 +108,8 @@ function banddisplay(response) {
 spotify-this-song
 --------------------
 This command used the Spotify request API. A node-spotify-api spotify.request sent the search request and the results were console.logged.
-function songInfo() {
+
+    function songInfo() {
     inquier.prompt([
         {
             type: "input",
@@ -131,8 +133,8 @@ function songInfo() {
             songdisplay(data);
         });
     });
-}
-function songdisplay(data) {
+    }
+    function songdisplay(data) {
 
     log(chalk.red("--------------------------------------------------------------"));
     log(chalk.blue("Artist: " + chalk.white(data.tracks.items[0].artists[0].name)));
@@ -140,12 +142,13 @@ function songdisplay(data) {
     log(chalk.blue("Want to Listen the song click here : " + chalk.white(data.tracks.items[0].album.external_urls.spotify)));
     log(chalk.blue("Album Name: " + chalk.white(data.tracks.items[0].album.artists[0].name)));
     log(chalk.red("--------------------------------------------------------------"));
-}
+    }
 
 movie-this
 ------------------------
 This command used the omdb API. An axios.get sent the search request and the results were console.logged.
-function movieInfo() {
+
+    function movieInfo() {
     inquier.prompt([
         {
             type: "input",
@@ -170,8 +173,8 @@ function movieInfo() {
             }
         );
     });
-}
-function moviedisplay(response) {
+        }
+    function moviedisplay(response) {
     log(chalk.red("--------------------------------------------------------------"));
     log(chalk.blue("Title of the Movie" + " " + chalk.white((response.data.Title))));
     log(chalk.blue("Year of the Movie:" + " " + chalk.white((response.data.Year))));
