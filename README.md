@@ -66,6 +66,34 @@ The LIRI Bot was designed to produce search results based on the following comma
    
 Code by Command
 ------------------------------
+Main-Menu 
+------------------------------
+This will display the menu on the screen for the user to navigate.
+
+    inquier.prompt([
+        {
+            type: "input",
+            name: "username",
+            message: "Who are u ?",
+        },
+        {
+            type: "confirm",
+            message: "Want to proceed",
+            name: "confirm",
+            default: true
+        },
+
+    ]).then(function (inresponse) {
+        // If the inquirerResponse confirms, we displays the inquirerResponse's username and pokemon from the answers.
+        if (inresponse.confirm) {
+            inquier.prompt([
+                {
+                    type: "list",
+                    name: "options",
+                    message: "Welcome" + "  " + inresponse.username + " " + "here are the options!!",
+                    choices: ["Need Info on Movies", "Need Info on Concert", "Spotify the Song", "Do what u Says"]
+
+
 Need-info-on-Concert
 ------------------------
     This command used the Bands in Town Artist Events API. An axios.get sent the search request and 
