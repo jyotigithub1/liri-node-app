@@ -259,14 +259,6 @@ function dowhatInfo() {
             else {
                 console.log("No Data Available");
             }
-
-
-
-
-
-
-
-
         }
     });
 }
