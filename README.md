@@ -50,11 +50,11 @@ The LIRI Bot was designed to produce search results based on the following comma
 
 4. do-what-it-says
 
-    Print the the results that are stored in the random.txt file
-    like    
-         spotify-this-song
-         Need-Info-on-Movies
-         Need-Info-on-Concert
+            print the the results that are stored in the random.txt file
+             like    
+             spotify-this-song
+             Need-Info-on-Movies
+             Need-Info-on-Concert
     
 #These are the packags included in the app.
     
@@ -143,6 +143,7 @@ This command used the Spotify request API. A node-spotify-api spotify.request se
     log(chalk.blue("Album Name: " + chalk.white(data.tracks.items[0].album.artists[0].name)));
     log(chalk.red("--------------------------------------------------------------"));
     }
+    
 
 movie-this
 ------------------------
@@ -185,19 +186,18 @@ This command used the omdb API. An axios.get sent the search request and the res
     log(chalk.blue("Plot of the movie: " + "\n" + chalk.white((response.data.Plot))));
     log(chalk.blue("Actors in the movie: " + chalk.white((response.data.Actors))));
     log(chalk.red("--------------------------------------------------------------"));
-}
+    }
+    
 do-what-it-says
 ---------------------------
 This command pulled the spotify-this-song information from the local random.txt file.
-function dowhatInfo() {
 
+    function dowhatInfo() {
     fs.readFile("random.txt", "utf8", function (err, data) {
-
         // If an error was experienced we will log it.
         if (err) {
             console.log(err);
         }
-
         // If no error is experienced, we'll log the phrase "Content Added" to our node console.
         else {
             var output = data.split(",");
@@ -257,14 +257,19 @@ function dowhatInfo() {
                 console.log("No Data Available");
             }
         }
+        
 Spotify API, Client ID & Client SECRET
 ------------------------------------------------
 
      The Spotify API requires developers to sign up and generate the necessary API credentials (client id and client secret):
     Step One: Visit https://developer.spotify.com/my-applications/#!/
+    
     Step Two: Either login to your existing Spotify account or create a new one (a free account is fine) and log in
+    
     Step Three: Once logged in, navigate to https://developer.spotify.com/my-applications/#!/applications/create to register a new application to be used with the Spotify API. When finished, click the “complete” button
+    
     Step Four: On the next screen, scroll down to where you see your client id and client secret. Copy these values down somewhere, you’ll need them to use the Spotify API and the node-spotify-api package.
+    
     As a security precaution the Spotify Client ID & SECRET were stored on a local .env file and added to a local .gitignore file to avoid publishing the information.
 
 Switch Statement
