@@ -257,9 +257,54 @@ function dowhatInfo() {
                 console.log("No Data Available");
             }
         }
-    });
-}
-    
+Spotify API, Client ID & Client SECRET
+------------------------------------------------
+
+     The Spotify API requires developers to sign up and generate the necessary API credentials (client id and client secret):
+    Step One: Visit https://developer.spotify.com/my-applications/#!/
+    Step Two: Either login to your existing Spotify account or create a new one (a free account is fine) and log in
+    Step Three: Once logged in, navigate to https://developer.spotify.com/my-applications/#!/applications/create to register a new application to be used with the Spotify API. When finished, click the “complete” button
+    Step Four: On the next screen, scroll down to where you see your client id and client secret. Copy these values down somewhere, you’ll need them to use the Spotify API and the node-spotify-api package.
+    As a security precaution the Spotify Client ID & SECRET were stored on a local .env file and added to a local .gitignore file to avoid publishing the information.
+
+Switch Statement
+         
+    A Switch Statement was used to capture the unique user command line input. This allowed LIRI to run the specific command that was entered by the user and access the appropriate code block.
+     switch (innerresponse.options) {
+                case "Need Info on Concert":
+                    bandinfo();
+                    break;
+                case "Spotify the Song":
+                    songInfo();
+                    break;
+                case "Need Info on Movies":
+                    movieInfo();
+                    break;
+                case "Do what u Says":
+                    dowhatInfo();
+                    break;
+            }
+Require & Local Linked files
+-------------------------------
+    LIRI required installation of several npm packages and links to local files.
+    require("dotenv").config();
+    const log = console.log;
+    var fs = require("fs");
+    // including moment
+    var moment = require("moment");
+    // including axios
+    var axios = require("axios");
+    // including keys
+    var keys = require("./keys.js");
+    // including inquier
+    var inquier = require('inquirer');
+    // including spotify
+    var Spotify = require('node-spotify-api');
+    var spotify = new Spotify(keys.spotify);
+    // log(spotify);
+    // including chalk
+    const chalk = require("chalk");
+
 Step-by Step screenshots
 ------------------------------
 main screen
