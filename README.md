@@ -48,7 +48,7 @@ The LIRI Bot was designed to produce search results based on the following comma
 
     Print the spotify results for “I want it that way” stored in the random.txt file
     
-These are the packags included in the app.
+#These are the packags included in the app.
     
     [Node-Spotify-API](https://www.npmjs.com/package/node-spotify-api)
      * [Axios]    (https://www.npmjs.com/package/axios)
@@ -61,6 +61,9 @@ Code by Command
 
 Step-by Step screenshots
 ------------------------------
+Movie-Info
+-----------------------------------------------
+
 
 
     
