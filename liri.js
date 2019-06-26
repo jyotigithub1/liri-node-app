@@ -219,13 +219,13 @@ function dowhatInfo() {
                     songdisplay(data);
                 });
             }
-            else if (output[2] === "Need Info on Movies") {
+            equalstring="Need-Info-on-Movies";
+             if (output[2] === equalstring) {
                 name = output[3];
                 console.log(output[2]);
-                var queryUrl = "http://www.omdbapi.com/?t=" + name + "&y=&plot=short&apikey=trilogy";
-                debugger;
-
-                axios.get(queryUrl).then(
+                console.log(output[3]);
+                var queryUrl = "https://www.omdbapi.com/?t=" + name + "&y=&plot=short&apikey=trilogy";
+                 axios.get(queryUrl).then(
                     function (response) {
                         if (!response) {
                             log(chalk.yellow("--------------------------------------------------------------"));
@@ -238,7 +238,8 @@ function dowhatInfo() {
 
                     });
             }
-            else if (output[4] === "Need Info on Concert") {
+                equalstring="Need-Info-on-Concert";
+             if (output[4]===equalstring) {
                 name = output[5];
                 console.log(output[4]);
                 var queryUrl = "https://rest.bandsintown.com/artists/" + name + "/events?app_id=codingbootcamp";
