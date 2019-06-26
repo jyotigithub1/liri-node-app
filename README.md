@@ -61,8 +61,31 @@ Code by Command
 
 Step-by Step screenshots
 ------------------------------
-Movie-Info
+main screen
 -----------------------------------------------
+
+![screenshot1](https://user-images.githubusercontent.com/48188772/60153254-53a37800-97a9-11e9-90bc-6dd22f24f254.png)
+
+Movie-info
+----------------------------------------
+![screenshot2](https://user-images.githubusercontent.com/48188772/60153316-7cc40880-97a9-11e9-8919-4c5b0f694ebb.png)
+
+Band-info
+--------------------------------------------
+
+![sc3](https://user-images.githubusercontent.com/48188772/60153359-a41ad580-97a9-11e9-856b-426edf35cde2.png)
+
+spotify-this-song
+--------------------
+
+![ss4](https://user-images.githubusercontent.com/48188772/60153386-b432b500-97a9-11e9-85e4-9b8a9e0da653.png)
+
+do-what-it-says
+---------------------
+![ss5](https://user-images.githubusercontent.com/48188772/60153400-bd238680-97a9-11e9-8183-aa7b730304d3.png)
+![readscreen2](https://user-images.githubusercontent.com/48188772/60153459-e9d79e00-97a9-11e9-9a37-3a56d4dbb7bc.png)
+
+
 
 
 
